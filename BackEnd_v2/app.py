@@ -7,6 +7,9 @@ from flask import make_response
 import controler.UserControlers as ControlUser
 app = Flask(__name__)
 
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    return 'Guelcome tu Oboosy'
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
