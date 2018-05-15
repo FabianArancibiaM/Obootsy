@@ -7,4 +7,3 @@ class UserControler:
         self.__user = model.ClassUsers.User(name,password)
     def validarUser(self):
         return self.__user.validar()
-
